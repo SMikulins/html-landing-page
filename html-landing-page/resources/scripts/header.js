@@ -7,7 +7,10 @@ const header = `
   <header class="py-10">
     <div class="container">
       <div class="flex justify-between">
-        <div>Hello Wonderful.</div>
+        <div class="flex space-x-2">
+          <div></div>
+          <div>Hello Wonderful.</div>
+        </div>
         <div>logo</div>
       </div>
     </div>  

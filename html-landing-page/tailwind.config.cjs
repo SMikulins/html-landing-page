@@ -1,4 +1,31 @@
 /** @type {import('tailwindcss').Config} */
+
+function hexToRgb ( hex ) {
+  // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
+  var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i
+  hex                = hex.replace( shorthandRegex, function ( m, r, g, b ) {
+    return r + r + g + g + b + b
+  } )
+
+  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec( hex )
+  return result ? {
+    r: parseInt( result[ 1 ], 16 ),
+    g: parseInt( result[ 2 ], 16 ),
+    b: parseInt( result[ 3 ], 16 ),
+  } : null
+}
+
+function withOpacityValue ( hex ) {
+  return ( { opacityValue } ) => {
+    if ( opacityValue === undefined ) {
+      return `${hex}`
+    }
+    const { r, g, b } = hexToRgb( hex )
+
+    return `rgba(${r},${g},${b},${opacityValue})`
+  }
+}
+
 module.exports = {
   content: [
     "./index.html",
@@ -16,6 +43,9 @@ module.exports = {
       fontFamily: {
         'roboto-slab': ['Roboto Slab', 'serif']
       },
+      colors: {
+        'hollywood-cerise': withOpacityValue( '#e80789' ),
+      }
     },
   },
   plugins: [
