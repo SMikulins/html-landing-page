@@ -10,7 +10,7 @@ import { setupCounter } from './counter.js'
 document.querySelector( '#app' ).innerHTML = `
   <div class="selection:bg-illusion selection:text-black">
     <header class="fixed top-0 inset-x-0 z-40 py-6 md:py-12">
-      <div class="container">
+      <div class="container px-4">
         <div class="flex justify-between">
           <div class="flex items-center space-x-2">
             <img class="h-4 w-auto" src="${wonderfulLogo}" alt="">
@@ -35,7 +35,7 @@ document.querySelector( '#app' ).innerHTML = `
       <img class="hidden md:block absolute inset-0 object-cover object-bottom h-full w-full" src="${macbook}" alt="">
       
       <div class="relative py-12 md:py-16 xl:py-28">
-        <div class="container">
+        <div class="container px-4">
         
           <div class="text-center md:text-left md:offset-7 md:col-5 lg:offset-7 lg:col-5">
             <h1 class="text-5xl font-bold lg:text-6xl">Let's Go!</h1>
@@ -44,9 +44,9 @@ document.querySelector( '#app' ).innerHTML = `
               <p>Aenean non tincidunt arcu. Morbi fermentum lectus a metus dapibus porta. Suspendisse et nibh porttitor, iaculis mauris at, placerat lacus</p>
             </div>
             
-            <a class="inline-block text-hollywood-cerise font-bold border-2 border-hollywood-cerise rounded-full py-3 px-8 mt-10 lg:mt-14
+            <a class="inline-block text-hollywood-cerise font-bold border-2 border-hollywood-cerise rounded-full py-2.5 px-8 mt-10 lg:mt-14
             hover:text-white hover:bg-hollywood-cerise transition
-            outline-none ring ring-transparent focus:ring-hollywood-cerise/50 active:bg-hollywood-cerise-dark" href="#">Call to Action</a>
+            outline-none focus:bg-hollywood-cerise focus:text-white active:border-hollywood-cerise-dark active:bg-hollywood-cerise-dark" href="#">Call to Action</a>
             
           </div>
         </div>
@@ -54,48 +54,50 @@ document.querySelector( '#app' ).innerHTML = `
     </section>
     
     <section class="relative flex flex-col py-12 md:py-16 xl:py-28">
-      <div class="container">
+      <div class="container px-4">
         <div class="row space-y-10 md:space-y-0">
           <div class="md:col-5 xl:col-4 xl:offset-1">
             <img class="" src="${chameleon}" alt="">
           </div>
           <div class="md:col-7 xl:col-6">
-            <h2 class="md:relative md:-top-10 md:-left-16 text-5xl font-bold lg:text-6xl">Hello<br>Wonderful.</h2>
-            <div class="space-y-5 mt-7 md:mt-3">
-              <p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dictum efficitur justo imperdiet pulvinar. Phasellus leo purus</b></p>
-              <p>Dapibus a tempus sed, varius non ante. Morbi vel metus nulla. Fusce enim nisl, ullamcorper vel odio et, euismod imperdiet quam. Aliquam aliquam, elit et consequat posuere, augue nunc tempus enim, eget lacinia leo turpis nec turpis. Donec facilisis tristique euismod. Donec malesuada elit at ipsum consequat, a pretium enim elementum. Aenean non tincidunt arcu. Morbi fermentum lectus a metus dapibus porta. Suspendisse et nibh porttitor, iaculis mauris at, placerat lacus</p>
+            <div class="md:pl-6 lg:pl-10">
+              <h2 class="md:relative md:-top-10 md:left-[-4.7rem] text-5xl font-bold lg:text-6xl">Hello<br>Wonderful.</h2>
+              <div class="space-y-5 mt-7 md:mt-3">
+                <p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dictum efficitur justo imperdiet pulvinar. Phasellus leo purus</b></p>
+                <p>Dapibus a tempus sed, varius non ante. Morbi vel metus nulla. Fusce enim nisl, ullamcorper vel odio et, euismod imperdiet quam. Aliquam aliquam, elit et consequat posuere, augue nunc tempus enim, eget lacinia leo turpis nec turpis. Donec facilisis tristique euismod. Donec malesuada elit at ipsum consequat, a pretium enim elementum. Aenean non tincidunt arcu. Morbi fermentum lectus a metus dapibus porta. Suspendisse et nibh porttitor, iaculis mauris at, placerat lacus</p>
+              </div>
+              
+              <a class="inline-flex items-center text-hollywood-cerise font-bold mt-10 space-x-2 group focus:text-hollywood-cerise active:text-hollywood-cerise-dark transition
+              outline-none" href="#">
+                <span>Let's go</span>
+                <svg class="fill-current transform group-hover:translate-x-1 group-focus:translate-x-1 transition" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M6.8,38.722l.793-.813a.838.838,0,0,1,1.211,0l6.942,7.119a.892.892,0,0,1,0,1.242L8.806,53.392a.838.838,0,0,1-1.211,0L6.8,52.578a.9.9,0,0,1,.014-1.257l4.3-4.206H.857A.866.866,0,0,1,0,46.236V45.064a.866.866,0,0,1,.857-.879H11.12l-4.3-4.206A.89.89,0,0,1,6.8,38.722Z" transform="translate(0 -37.65)"/></svg>
+              </a>
             </div>
-            
-            <a class="inline-flex items-center text-hollywood-cerise font-bold mt-10 space-x-2 group focus:text-hollywood-cerise active:text-hollywood-cerise-dark transition
-            outline-none" href="#">
-              <span>Let's go</span>
-              <svg class="fill-current transform group-hover:translate-x-1 group-focus:translate-x-1 transition" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M6.8,38.722l.793-.813a.838.838,0,0,1,1.211,0l6.942,7.119a.892.892,0,0,1,0,1.242L8.806,53.392a.838.838,0,0,1-1.211,0L6.8,52.578a.9.9,0,0,1,.014-1.257l4.3-4.206H.857A.866.866,0,0,1,0,46.236V45.064a.866.866,0,0,1,.857-.879H11.12l-4.3-4.206A.89.89,0,0,1,6.8,38.722Z" transform="translate(0 -37.65)"/></svg>
-            </a>
           </div>
         </div>
       </div>
     </section>
     
     <section class="relative flex flex-col py-12 md:py-16 xl:py-28 bg-alabaster">
-      <div class="container">
+      <div class="container px-4">
         <div class="row">
           <div class="xl:col-10 xl:offset-1">
             <div class="flex max-md:flex-col max-md:items-center max-md:space-y-10 justify-between">
-              <div class="text-center w-full max-w-[18rem] md:max-w-[11rem]">
+              <div class="text-center w-full max-w-[16rem] md:max-w-[11rem]">
                 <p class="text-hollywood-cerise text-7xl font-thin font-roboto-slab lg:text-8xl">48</p>
                 <div class="mt-4">
                   <p><b>Mauris Ultricies Lacus</b></p>
                   <p>Vel mi tincidunt gravida suspendisse dictum</p>
                 </div>
               </div>
-              <div class="text-center w-full max-w-[18rem] md:max-w-[11rem]">
+              <div class="text-center w-full max-w-[16rem] md:max-w-[11rem]">
                 <p class="text-hollywood-cerise text-7xl font-thin font-roboto-slab lg:text-8xl">13</p>
                 <div class="mt-4">
                   <p><b>Aliquam et Hibh</b></p>
                   <p>Placerat, maximus ante ut, consequat orci</p>
                 </div>
               </div>
-              <div class="text-center w-full max-w-[18rem] md:max-w-[11rem]">
+              <div class="text-center w-full max-w-[16rem] md:max-w-[11rem]">
                 <p class="text-hollywood-cerise text-7xl font-thin font-roboto-slab lg:text-8xl">97</p>
                 <div class="mt-4">
                   <p><b>Nullam quis augue</b></p>
@@ -103,6 +105,35 @@ document.querySelector( '#app' ).innerHTML = `
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="relative flex flex-col py-12 md:py-16 xl:py-28 bg-gradient-to-r from-cruise to-illusion -bg-gradient-45">
+      <div class="container px-4">
+        <div class="flex justify-center">
+          <div class="max-w-[356px] w-full p-6 bg-white rounded-lg border-t-[1rem] border-hollywood-cerise shadow-wonderful">
+            <h2 class="font-bold text-5xl lg:text-6xl">Form.</h2>
+            <form class="mt-6" action="">
+              <div>
+                <label class="text-xs text-hollywood-cerise font-bold uppercase" for="name">Name</label>
+                <input class="block w-full border border-alto rounded pl-3 py-2 outline-none ring-0 ring-transparent hover:ring-4 hover:ring-hollywood-cerise/10 hover:border-alto-dark active:ring-0 focus:ring-4 focus:ring-hollywood-cerise/[0.15] focus:border-hollywood-cerise transition" type="text" id="name" name="name">
+              </div>
+              
+              <div class="mt-3">
+                <label class="text-xs text-hollywood-cerise font-bold uppercase" for="email">Email</label><br>
+                <input class="block w-full border border-alto rounded pl-3 py-2 outline-none ring-0 ring-transparent hover:ring-4 hover:ring-hollywood-cerise/10 hover:border-alto-dark active:ring-0 focus:ring-4 focus:ring-hollywood-cerise/[0.15] focus:border-hollywood-cerise transition" type="email" id="email" name="email">
+              </div>
+              
+              <input class="cursor-pointer
+              block w-full text-white font-bold rounded bg-hollywood-cerise py-2.5 px-8 mt-10 lg:mt-6
+              hover:text-white hover:bg-hollywood-cerise-dark transition
+              outline-none focus:bg-hollywood-cerise-dark"
+              type="submit" value="Submit">
+              
+              <p class="text-xs mt-4">Nullam quis augue pellentesque, suscipit urna vel, porta urna. Nam cursus leo ut nisi pharetra, ut rutrum turpis lobortis. Mauris ultrices urna a sapien pharetra, a pulvinar nisi accumsan. Sed efficitur vel sem accumsan sodales. Nullam sodales velit sit amet orci semper venenatis. Curabitur scelerisque, tortor in dictum maximus.</p>
+            </form> 
           </div>
         </div>
       </div>
