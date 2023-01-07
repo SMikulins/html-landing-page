@@ -30,7 +30,7 @@ document.querySelector( '#app' ).innerHTML = `
       </div>  
     </header>
     
-    <section class="relative flex flex-col bg-[#f0f2f3] pt-12 md:pt-[4.5rem]">
+    <section class="relative flex flex-col bg-porcelain pt-12 md:pt-[4.5rem]">
       <img class="hidden md:block absolute inset-0 object-cover object-bottom h-full w-full" src="${bgImage}" alt="">
       
       <div class="relative py-12 md:py-16 xl:py-28">

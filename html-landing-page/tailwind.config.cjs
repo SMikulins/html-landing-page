@@ -44,6 +44,7 @@ module.exports = {
         'roboto-slab': ['Roboto Slab', 'serif']
       },
       colors: {
+        'porcelain': withOpacityValue( '#f0f2f3' ),
         'illusion': withOpacityValue( '#F5ABD6' ),
         'hollywood-cerise': withOpacityValue( '#e80789' ),
         'hollywood-cerise-light': withOpacityValue( '#ff5ab9' ),
