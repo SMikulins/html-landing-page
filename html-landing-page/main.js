@@ -1,6 +1,7 @@
 import './resources/styles/app.css'
 import javascriptLogo from './javascript.svg'
-import bgImage from './resources/images/macbook.jpg'
+import macbook from './resources/images/macbook.jpg'
+import chameleon from './resources/images/chameleon.jpg'
 import wonderfulLogo from './resources/svgs/wonderful-logo.svg'
 import { setupCounter } from './counter.js'
 // import { header } from './resources/scripts/header.js'
@@ -31,7 +32,7 @@ document.querySelector( '#app' ).innerHTML = `
     </header>
     
     <section class="relative flex flex-col bg-porcelain pt-12 md:pt-[4.5rem]">
-      <img class="hidden md:block absolute inset-0 object-cover object-bottom h-full w-full" src="${bgImage}" alt="">
+      <img class="hidden md:block absolute inset-0 object-cover object-bottom h-full w-full" src="${macbook}" alt="">
       
       <div class="relative py-12 md:py-16 xl:py-28">
         <div class="container">
@@ -50,7 +51,29 @@ document.querySelector( '#app' ).innerHTML = `
           </div>
         </div>
       </div>
-      
+    </section>
+    
+    <section class="relative flex flex-col py-12 md:py-16 xl:py-28">
+      <div class="container">
+        <div class="row space-y-10 md:space-y-0">
+          <div class="md:col-5 xl:col-4 xl:offset-1">
+            <img class="" src="${chameleon}" alt="">
+          </div>
+          <div class="md:col-7 xl:col-6">
+            <h2 class="md:relative md:-top-10 md:-left-16 text-5xl font-bold lg:text-6xl">Hello<br>Wonderful.</h2>
+            <div class="space-y-5 mt-7 md:mt-3">
+              <p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dictum efficitur justo imperdiet pulvinar. Phasellus leo purus</b></p>
+              <p>Dapibus a tempus sed, varius non ante. Morbi vel metus nulla. Fusce enim nisl, ullamcorper vel odio et, euismod imperdiet quam. Aliquam aliquam, elit et consequat posuere, augue nunc tempus enim, eget lacinia leo turpis nec turpis. Donec facilisis tristique euismod. Donec malesuada elit at ipsum consequat, a pretium enim elementum. Aenean non tincidunt arcu. Morbi fermentum lectus a metus dapibus porta. Suspendisse et nibh porttitor, iaculis mauris at, placerat lacus</p>
+            </div>
+            
+            <a class="inline-flex items-center text-hollywood-cerise font-bold mt-10 space-x-2 group focus:text-hollywood-cerise active:text-hollywood-cerise-dark transition
+            outline-none" href="#">
+              <span>Let's go</span>
+              <svg class="fill-current transform group-hover:translate-x-1 group-focus:translate-x-1 transition" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M6.8,38.722l.793-.813a.838.838,0,0,1,1.211,0l6.942,7.119a.892.892,0,0,1,0,1.242L8.806,53.392a.838.838,0,0,1-1.211,0L6.8,52.578a.9.9,0,0,1,.014-1.257l4.3-4.206H.857A.866.866,0,0,1,0,46.236V45.064a.866.866,0,0,1,.857-.879H11.12l-4.3-4.206A.89.89,0,0,1,6.8,38.722Z" transform="translate(0 -37.65)"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
     
 
