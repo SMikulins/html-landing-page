@@ -49,6 +49,8 @@ module.exports = {
         'alabaster': withOpacityValue( '#F9F9F9' ),
         'alto': withOpacityValue( '#D9D9D9' ),
         'alto-dark': withOpacityValue( '#a8a8a8' ),
+        'emperor': withOpacityValue( '#545454' ),
+        'mine-shaft': withOpacityValue( '#292929' ),
         'illusion': withOpacityValue( '#F5ABD6' ),
         'hollywood-cerise': withOpacityValue( '#e80789' ),
         'hollywood-cerise-light': withOpacityValue( '#ff5ab9' ),
