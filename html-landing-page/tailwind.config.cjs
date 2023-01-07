@@ -45,6 +45,7 @@ module.exports = {
       },
       colors: {
         'porcelain': withOpacityValue( '#f0f2f3' ),
+        'alabaster': withOpacityValue( '#F9F9F9' ),
         'illusion': withOpacityValue( '#F5ABD6' ),
         'hollywood-cerise': withOpacityValue( '#e80789' ),
         'hollywood-cerise-light': withOpacityValue( '#ff5ab9' ),

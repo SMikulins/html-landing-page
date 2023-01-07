@@ -76,6 +76,38 @@ document.querySelector( '#app' ).innerHTML = `
       </div>
     </section>
     
+    <section class="relative flex flex-col py-12 md:py-16 xl:py-28 bg-alabaster">
+      <div class="container">
+        <div class="row">
+          <div class="xl:col-10 xl:offset-1">
+            <div class="flex max-md:flex-col max-md:items-center max-md:space-y-10 justify-between">
+              <div class="text-center w-full max-w-[18rem] md:max-w-[11rem]">
+                <p class="text-hollywood-cerise text-7xl font-thin font-roboto-slab lg:text-8xl">48</p>
+                <div class="mt-4">
+                  <p><b>Mauris Ultricies Lacus</b></p>
+                  <p>Vel mi tincidunt gravida suspendisse dictum</p>
+                </div>
+              </div>
+              <div class="text-center w-full max-w-[18rem] md:max-w-[11rem]">
+                <p class="text-hollywood-cerise text-7xl font-thin font-roboto-slab lg:text-8xl">13</p>
+                <div class="mt-4">
+                  <p><b>Aliquam et Hibh</b></p>
+                  <p>Placerat, maximus ante ut, consequat orci</p>
+                </div>
+              </div>
+              <div class="text-center w-full max-w-[18rem] md:max-w-[11rem]">
+                <p class="text-hollywood-cerise text-7xl font-thin font-roboto-slab lg:text-8xl">97</p>
+                <div class="mt-4">
+                  <p><b>Nullam quis augue</b></p>
+                  <p>Pellentesque, suscipit urna vel, porta urna</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
 
   </div>
 `
