@@ -10,7 +10,6 @@ export function userScroll(element) {
     }
 
     window.addEventListener('scroll', throttle(function () {
-      console.log("test")
       if (this.scrollY > 0) {
         body.classList.add('header-is-sticky')
       } else {
