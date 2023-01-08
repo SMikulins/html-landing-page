@@ -4,17 +4,17 @@ import macbook from './resources/images/macbook.jpg'
 import chameleon from './resources/images/chameleon.jpg'
 import wonderfulLogo from './resources/svgs/wonderful-logo.svg'
 import { setupCounter } from './counter.js'
-// import { header } from './resources/scripts/header.js'
+import { userScroll } from './resources/scripts/userScroll.js'
 
 
 document.querySelector( '#app' ).innerHTML = `
   <div class="selection:bg-illusion selection:text-black">
-    <header class="fixed top-0 inset-x-0 z-40 py-6 md:py-12">
+    <header class="fixed top-0 inset-x-0 z-40 py-6 md:py-12 sticky-header-group:py-4 sm:sticky-header-group:py-5 sticky-header-group:bg-white transition-[padding,background-color,box-shadow] duration-500 sticky-header-group:shadow-lg">
       <div class="container px-4">
         <div class="flex justify-between">
           <div class="flex items-center space-x-2">
             <img class="h-4 w-auto" src="${wonderfulLogo}" alt="">
-            <div class="text-base text-black font-bold md:text-white"><span class="hidden sm:inline">Hello</span> Wonderful.</div>
+            <div class="text-base text-black font-bold md:text-white md:sticky-header-group:text-black transition-colors duration-500"><span class="hidden sm:inline">Hello</span> Wonderful.</div>
           </div>
           <div class="flex space-x-4">
             <a class="group outline-none" href="#">
@@ -189,4 +189,5 @@ document.querySelector( '#app' ).innerHTML = `
   </div>
 `
 
-setupCounter( document.querySelector( '#counter' ) )
+// setupCounter( document.querySelector( '#counter' ) )
+userScroll()

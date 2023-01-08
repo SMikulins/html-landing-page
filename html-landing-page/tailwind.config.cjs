@@ -29,37 +29,37 @@ function withOpacityValue ( hex ) {
 
 module.exports = {
   content: [
-    "./index.html",
-    "./*.js",
-    "./resources/**/*.{js,svg}"
+    './index.html',
+    './*.js',
+    './resources/**/*.{js,svg}',
   ],
   theme: {
     screens: {
       sm: '576px', md: '768px', lg: '992px', xl: '1124px',
     },
     fontFamily: {
-      'sans': ['Roboto', 'sans-serif'],
+      'sans': [ 'Roboto', 'sans-serif' ],
     },
     extend: {
       fontFamily: {
-        'roboto-slab': ['Roboto Slab', 'serif']
+        'roboto-slab': [ 'Roboto Slab', 'serif' ],
       },
       colors: {
         'porcelain': withOpacityValue( '#f0f2f3' ),
-        'alabaster': withOpacityValue( '#F9F9F9' ),
-        'alto': withOpacityValue( '#D9D9D9' ),
+        'alabaster': withOpacityValue( '#f9f9f9' ),
+        'alto': withOpacityValue( '#d9d9d9' ),
         'alto-dark': withOpacityValue( '#a8a8a8' ),
         'emperor': withOpacityValue( '#545454' ),
         'mine-shaft': withOpacityValue( '#292929' ),
-        'illusion': withOpacityValue( '#F5ABD6' ),
+        'illusion': withOpacityValue( '#f5abd6' ),
         'hollywood-cerise': withOpacityValue( '#e80789' ),
         'hollywood-cerise-light': withOpacityValue( '#ff5ab9' ),
         'hollywood-cerise-dark': withOpacityValue( '#b0005c' ),
-        'cruise': withOpacityValue( '#C6EFE4' ),
+        'cruise': withOpacityValue( '#c6efe4' ),
       },
       boxShadow: {
         'wonderful': '0px 0px 32px #00000029',
-      }
+      },
     },
   },
   plugins: [
@@ -102,16 +102,16 @@ module.exports = {
       },
       gridGutterWidth: '0.75rem',
     } ),
-    plugin(function({ matchUtilities, theme }) {
+    plugin( function ( { matchUtilities, theme } ) {
       matchUtilities(
         {
-          'bg-gradient': (angle) => ({
+          'bg-gradient': ( angle ) => ({
             'background-image': `linear-gradient(${angle}, var(--tw-gradient-stops))`,
           }),
         },
         {
           values: Object.assign(
-            theme('bgGradientDeg', {}),
+            theme( 'bgGradientDeg', {} ),
             {
               10: '10deg',
               15: '15deg',
@@ -123,10 +123,14 @@ module.exports = {
               90: '90deg',
               120: '120deg',
               135: '135deg',
-            }
-          )
-        }
+            },
+          ),
+        },
       )
-    })
+    } ),
+    plugin( function ( { addVariant } ) {
+      addVariant( 'sticky-header', '&.header-is-sticky' )
+      addVariant( 'sticky-header-group', ':merge(.header-is-sticky) &' )
+    } ),
   ],
 }
