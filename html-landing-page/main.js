@@ -78,7 +78,7 @@ document.querySelector( '#app' ).innerHTML = `
       </div>
     </section>
     
-    <section class="py-12 md:py-16 xl:py-28 bg-alabaster">
+    <section class="py-12 md:py-16 bg-alabaster">
       <div class="container px-4">
         <div class="row">
           <div class="xl:col-10 xl:offset-1">
