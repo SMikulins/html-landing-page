@@ -177,14 +177,12 @@ document.querySelector( '#app' ).innerHTML = `
           
         </div>
       </div>
-      <div class="pt-8 pb-14">
+      <div class="py-8 sm:pb-14">
         <div class="container px-4">
           <p class="text-xs">Nullam quis augue pellentesque, suscipit urna vel, porta urna. Nam cursus leo ut nisi pharetra, ut rutrum turpis lobortis. Mauris ultrices urna a sapien pharetra, a pulvinar nisi accumsan. Sed efficitur vel sem accumsan sodales. Nullam sodales velit sit amet orci semper venenatis. Curabitur scelerisque, tortor in dictum maximus. ©2022 Wonderful Creative Agency</p>
         </div>
       </div>
     </footer>
-    
-
   </div>
 `
 
