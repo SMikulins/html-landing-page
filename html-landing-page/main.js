@@ -13,7 +13,7 @@ document.querySelector( '#app' ).innerHTML = `
         <div class="flex justify-between">
           <div class="flex items-center space-x-2">
             <img class="h-4 w-auto" src="${wonderfulLogo}" alt="">
-            <div class="text-base text-black font-bold md:text-white md:sticky-header-group:text-black transition-colors duration-500"><span class="hidden sm:inline">Hello</span> Wonderful.</div>
+            <div class="text-base text-black font-bold md:text-white md:sticky-header-group:text-black transition-colors duration-500">Hello Wonderful.</div>
           </div>
           <div class="flex space-x-4">
             <a class="group outline-none" href="#">
