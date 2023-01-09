@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "gsap": "^3.11.4",
     "lodash": "^4.17.21",
     "postcss": "^8.4.20",
     "tailwind-bootstrap-grid": "^5.0.1",

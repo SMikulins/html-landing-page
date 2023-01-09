@@ -1,10 +1,9 @@
 import './resources/styles/app.css'
-import javascriptLogo from './javascript.svg'
 import macbook from './resources/images/macbook.jpg'
 import chameleon from './resources/images/chameleon.jpg'
 import wonderfulLogo from './resources/svgs/wonderful-logo.svg'
-import { setupCounter } from './counter.js'
 import { userScroll } from './resources/scripts/userScroll.js'
+import { counter } from './resources/scripts/counter.js'
 
 
 document.querySelector( '#app' ).innerHTML = `
@@ -78,27 +77,27 @@ document.querySelector( '#app' ).innerHTML = `
       </div>
     </section>
     
-    <section class="py-12 md:py-16 bg-alabaster">
+    <section id="counters" class="py-12 md:py-16 bg-alabaster">
       <div class="container px-4">
         <div class="row">
           <div class="xl:col-10 xl:offset-1">
             <div class="flex max-md:flex-col max-md:items-center max-md:space-y-10 justify-between">
               <div class="text-center w-full max-w-[16rem] md:max-w-[11rem]">
-                <p class="text-hollywood-cerise text-7xl font-thin font-roboto-slab lg:text-8xl">48</p>
+                <p id="counter-1" class="text-hollywood-cerise text-7xl font-thin font-roboto-slab lg:text-8xl">48</p>
                 <div class="mt-4">
                   <p><b>Mauris Ultricies Lacus</b></p>
                   <p>Vel mi tincidunt gravida suspendisse dictum</p>
                 </div>
               </div>
               <div class="text-center w-full max-w-[16rem] md:max-w-[11rem]">
-                <p class="text-hollywood-cerise text-7xl font-thin font-roboto-slab lg:text-8xl">13</p>
+                <p id="counter-2" class="text-hollywood-cerise text-7xl font-thin font-roboto-slab lg:text-8xl">13</p>
                 <div class="mt-4">
                   <p><b>Aliquam et Hibh</b></p>
                   <p>Placerat, maximus ante ut, consequat orci</p>
                 </div>
               </div>
               <div class="text-center w-full max-w-[16rem] md:max-w-[11rem]">
-                <p class="text-hollywood-cerise text-7xl font-thin font-roboto-slab lg:text-8xl">97</p>
+                <p id="counter-3" class="text-hollywood-cerise text-7xl font-thin font-roboto-slab lg:text-8xl">97</p>
                 <div class="mt-4">
                   <p><b>Nullam quis augue</b></p>
                   <p>Pellentesque, suscipit urna vel, porta urna</p>
@@ -189,5 +188,5 @@ document.querySelector( '#app' ).innerHTML = `
   </div>
 `
 
-// setupCounter( document.querySelector( '#counter' ) )
 userScroll()
+counter()
