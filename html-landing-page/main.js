@@ -1,10 +1,9 @@
 import './resources/styles/app.css'
-import macbook from './resources/images/macbook.jpg'
-import chameleon from './resources/images/chameleon.jpg'
+import macbook3840 from './resources/images/macbook_3840x.jpg'
+import chameleon1088 from './resources/images/chameleon_1088x.jpg'
 import wonderfulLogo from './resources/svgs/wonderful-logo.svg'
 import { userScroll } from './resources/scripts/userScroll.js'
 import { counter } from './resources/scripts/counter.js'
-
 
 document.querySelector( '#app' ).innerHTML = `
   <div class="selection:bg-illusion selection:text-black">
@@ -31,7 +30,7 @@ document.querySelector( '#app' ).innerHTML = `
     </header>
     
     <section class="relative flex flex-col bg-porcelain pt-12 md:pt-[4.5rem]">
-      <img class="hidden md:block absolute inset-0 object-cover object-bottom h-full w-full" src="${macbook}" alt="">
+      <img class="hidden md:block absolute inset-0 object-cover object-bottom h-full w-full" src="${macbook3840}" alt="">
       
       <div class="relative py-12 md:py-16 xl:py-28">
         <div class="container px-4">
@@ -56,7 +55,7 @@ document.querySelector( '#app' ).innerHTML = `
       <div class="container px-4">
         <div class="row space-y-10 md:space-y-0">
           <div class="md:col-5 xl:col-4 xl:offset-1">
-            <img class="" src="${chameleon}" alt="">
+            <img class="w-full" src="${chameleon1088}" alt="">
           </div>
           <div class="md:col-7 xl:col-6">
             <div class="md:pl-6 lg:pl-10">
