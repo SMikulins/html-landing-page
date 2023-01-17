@@ -2,9 +2,9 @@
   <div class="container px-4">
     <div class="flex justify-between">
       <div class="flex items-center space-x-2">
-{{--        <img class="h-4 w-auto" src="${wonderfulLogo}" alt="">--}}
-{{--        @svg('svgs.wonderful-logo', 'h-4 w-auto')--}}
-{{--        @svg('images.svg.wonderful-logo', 'h-4 w-auto')--}}
+        <svg class="h-4 w-auto" xmlns="http://www.w3.org/2000/svg" width="32" height="16" viewBox="0 0 32 16">
+          <path d="m0,0h32l-10.24,16-5.76-8.7-5.76,8.7L0,0Z" fill="#e80789"/>
+        </svg>
         <div class="text-base text-black font-bold md:text-white md:sticky-header-group:text-black transition-colors duration-500">Hello Wonderful.</div>
       </div>
       <div class="flex space-x-4">
